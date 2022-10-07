@@ -4,7 +4,7 @@
 [![Live Demo](http://pepy.tech/badge/shallow-backup)](http://pepy.tech/count/shallow-backup)
 -->
 
-`todolist` is a web application that allows users to register themselves and then lets them maintain their todolist.
+`todolist` is a web application that allows users to register themselves and then lets them maintain their To Do list.
 
 
 ### Project Objective

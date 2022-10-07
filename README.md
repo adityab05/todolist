@@ -7,6 +7,9 @@
 `todolist` is a web application that allows users to register themselves and then lets them maintain their To Do list.
 
 
+![ToDo List GIF Demo](demo_images/demo.gif)
+
+
 ### Project Objective
 
 + To learn about web application development using Django
@@ -20,11 +23,6 @@
 
 ### Future Changes
 
-+ Add GIF Demo
 + Add Heruko hosted live demo
 + Improve comments
 + Improve variable names
-
-<!--
-![ToDo List GIF Demo](img/shallow-backup-demo.gif)
--->

@@ -14,8 +14,6 @@ from django.contrib.auth import login
 
 from .models import Task
 
-# Create your views here.
-
 
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
@@ -61,10 +59,12 @@ class TaskList(LoginRequiredMixin, ListView):
         
         return context
 
+
 class TaskDetail(LoginRequiredMixin, DetailView):
     model = Task
     context_object_name: str = 'task'
     template_name: str = 'base/task.html'
+
 
 class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
@@ -75,14 +75,14 @@ class TaskCreate(LoginRequiredMixin, CreateView):
         form.instance.user  = self.request.user
         return super(TaskCreate, self).form_valid(form)
 
+
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
 
+
 class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
     context_object_name = "task"
     success_url = reverse_lazy('tasks')
-
-
